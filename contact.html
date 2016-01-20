@@ -28,7 +28,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Home - Corporate Layout 4 | Canvas</title>
+	<title>Contact | Canvas</title>
 
 </head>
 
@@ -40,7 +40,7 @@
 
 		<!-- Header
 		============================================= -->
-		<header id="header" class="transparent-header dark full-header" data-sticky-class="not-dark">
+		<header id="header" class="full-header">
 
 			<div id="header-wrap">
 
@@ -60,7 +60,7 @@
 					<nav id="primary-menu">
 
 						<ul>
-							<li class="current"><a href="index.html"><div>Home</div></a>
+							<li><a href="index.html"><div>Home</div></a>
 								<ul>
 									<li><a href="index-corporate.html"><div>Home - Corporate</div></a>
 										<ul>
@@ -128,7 +128,7 @@
 									<li><a href="index-app-showcase.html"><div>Home - App Showcase</div></a></li>
 								</ul>
 							</li>
-							<li><a href="#"><div>Features</div></a>
+							<li class="current"><a href="#"><div>Features</div></a>
 								<ul>
 									<li><a href="#"><div><i class="icon-stack"></i>Sliders</div></a>
 										<ul>
@@ -280,6 +280,18 @@
 											<li><a href="contact-5.html">Contact 5</a></li>
 											<li><a href="contact-6.html">Contact 6</a></li>
 											<li><a href="contact-7.html">Contact 7</a></li>
+										</ul>
+									</li>
+									<li><a href="#footer" data-scrollto="#footer"><div><i class="icon-th"></i>Footers</div></a>
+										<ul>
+											<li><a href="sticky-footer.html"><div>Sticky Footer</div></a></li>
+											<li><a href="#footer" data-scrollto="#footer"><div>Footer - Layout 1</div></a></li>
+											<li><a href="footer-2.html#footer"><div>Footer - Layout 2</div></a></li>
+											<li><a href="footer-3.html#footer"><div>Footer - Layout 3</div></a></li>
+											<li><a href="footer-4.html#footer"><div>Footer - Layout 4</div></a></li>
+											<li><a href="footer-5.html#footer"><div>Footer - Layout 5</div></a></li>
+											<li><a href="footer-6.html#footer"><div>Footer - Layout 6</div></a></li>
+											<li><a href="footer-7.html#footer"><div>Footer - Layout 7</div></a></li>
 										</ul>
 									</li>
 									<li><a href="#"><div><i class="icon-calendar3"></i>Events</div></a>
@@ -670,24 +682,59 @@
 
 		</header><!-- #header end -->
 
-		<section id="slider" class="slider-parallax" style="background: url('images/landing/landing1.jpg') no-repeat; background-size: cover" data-height-lg="600" data-height-md="500" data-height-sm="400" data-height-xs="300" data-height-xxs="250">
+		<!-- Page Title
+		============================================= -->
+		<section id="page-title">
+
 			<div class="container clearfix">
-				<div class="vertical-middle dark center">
-
-					<div class="heading-block nobottommargin center">
-						<h1>
-							<span class="text-rotater nocolor" data-separator="|" data-rotate="flipInX" data-speed="3500">
-								Canvas makes your Business <span class="t-rotate">Simple|Customizable|Flexible|Easy|Profitable</span>
-							</span>
-						</h1>
-						<span class="hidden-xs">Learn how to grow your Awesome idea into a successful business.</span>
-					</div>
-
-					<a href="#" class="button button-border button-light button-rounded button-reveal tright button-large topmargin hidden-xs"><i class="icon-angle-right"></i><span>Start Tour</span></a>
-
-				</div>
+				<h1>Contact</h1>
+				<span>Get in Touch with Us</span>
+				<ol class="breadcrumb">
+					<li><a href="#">Home</a></li>
+					<li class="active">Contact</li>
+				</ol>
 			</div>
-		</section>
+
+		</section><!-- #page-title end -->
+
+		<!-- Google Map
+		============================================= -->
+		<!-- <section id="google-map" class="gmap slider-parallax"></section>
+
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="js/jquery.gmap.js"></script>
+
+		<script type="text/javascript">
+
+			$('#google-map').gMap({
+
+				address: 'Melbourne, Australia',
+				maptype: 'ROADMAP',
+				zoom: 14,
+				markers: [
+					{
+						address: "Melbourne, Australia",
+						html: '<div style="width: 300px;"><h4 style="margin-bottom: 8px;">Hi, we\'re <span>Envato</span></h4><p class="nobottommargin">Our mission is to help people to <strong>earn</strong> and to <strong>learn</strong> online. We operate <strong>marketplaces</strong> where hundreds of thousands of people buy and sell digital goods every day, and a network of educational blogs where millions learn <strong>creative skills</strong>.</p></div>',
+						icon: {
+							image: "images/icons/map-icon-red.png",
+							iconsize: [32, 39],
+							iconanchor: [13,39]
+						}
+					}
+				],
+				doubleclickzoom: false,
+				controls: {
+					panControl: true,
+					zoomControl: true,
+					mapTypeControl: true,
+					scaleControl: false,
+					streetViewControl: false,
+					overviewMapControl: false
+				}
+
+			});
+
+		</script> --><!-- Google Map End -->
 
 		<!-- Content
 		============================================= -->
@@ -697,167 +744,121 @@
 
 				<div class="container clearfix">
 
-					<div class="col_one_third">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-screen i-alt"></i></a>
+					<!-- Postcontent
+					============================================= -->
+					<div class="postcontent nobottommargin">
+
+						<h3>Send us an Email</h3>
+
+						<div id="contact-form-result" data-notify-type="success" data-notify-msg="<i class=icon-ok-sign></i> Message Sent Successfully!"></div>
+
+						<form class="nobottommargin" id="template-contactform" name="template-contactform" action="include/sendemail.php" method="post">
+
+							<div class="form-process"></div>
+
+							<div class="col_one_third">
+								<label for="template-contactform-name">Name <small>*</small></label>
+								<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
 							</div>
-							<h3>Responsive Layout</h3>
-							<p>Powerful Layout with Responsive functionality that can be adapted to any screen size. Resize browser to view.</p>
-						</div>
-					</div>
 
-					<div class="col_one_third">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-eye i-alt"></i></a>
+							<div class="col_one_third">
+								<label for="template-contactform-email">Email <small>*</small></label>
+								<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
 							</div>
-							<h3>Retina Ready Graphics</h3>
-							<p>Looks beautiful &amp; ultra-sharp on Retina Screen Displays. Retina Icons, Fonts &amp; all others graphics are optimized.</p>
-						</div>
-					</div>
 
-					<div class="col_one_third col_last">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-beaker i-alt"></i></a>
+							<div class="col_one_third col_last">
+								<label for="template-contactform-phone">Phone</label>
+								<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
 							</div>
-							<h3>Powerful Performance</h3>
-							<p>Canvas includes tons of optimized code that are completely customizable and deliver unmatched fast performance.</p>
-						</div>
-					</div>
 
-					<div class="clear"></div>
+							<div class="clear"></div>
 
-					<div class="col_one_third nobottommargin">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-stack i-alt"></i></a>
+							<div class="col_two_third">
+								<label for="template-contactform-subject">Subject <small>*</small></label>
+								<input type="text" id="template-contactform-subject" name="template-contactform-subject" value="" class="required sm-form-control" />
 							</div>
-							<h3>Premium Sliders Included</h3>
-							<p>Canvas included 20+ custom designed Slider Pages with Premium Sliders like Layer, Revolution, Swiper &amp; others.</p>
-						</div>
-					</div>
 
-					<div class="col_one_third nobottommargin">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-tint i-alt"></i></a>
+							<div class="col_one_third col_last">
+								<label for="template-contactform-service">Services</label>
+								<select id="template-contactform-service" name="template-contactform-service" class="sm-form-control">
+									<option value="">-- Select One --</option>
+									<option value="Wordpress">Wordpress</option>
+									<option value="PHP / MySQL">PHP / MySQL</option>
+									<option value="HTML5 / CSS3">HTML5 / CSS3</option>
+									<option value="Graphic Design">Graphic Design</option>
+								</select>
 							</div>
-							<h3>Unlimited Color Options</h3>
-							<p>Change the color scheme of the Theme in a flash just by changing the 6-digit HEX code in the colors.php file.</p>
-						</div>
-					</div>
 
-					<div class="col_one_third nobottommargin col_last">
-						<div class="feature-box fbox-border fbox-effect">
-							<div class="fbox-icon">
-								<a href="#"><i class="icon-text-width i-alt"></i></a>
+							<div class="clear"></div>
+
+							<div class="col_full">
+								<label for="template-contactform-message">Message <small>*</small></label>
+								<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
 							</div>
-							<h3>CUSTOMIZABLE FONTS</h3>
-							<p>Use any Font you like from Google Web Fonts, Typekit or other Web Fonts. They will blend in perfectly.</p>
-						</div>
-					</div>
 
-					<div class="clear"></div>
+							<div class="col_full hidden">
+								<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+							</div>
+
+							<div class="col_full">
+								<button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+							</div>
+
+						</form>
+
+						<script type="text/javascript">
+
+							$("#template-contactform").validate({
+								submitHandler: function(form) {
+									$('.form-process').fadeIn();
+									$(form).ajaxSubmit({
+										target: '#contact-form-result',
+										success: function() {
+											$('.form-process').fadeOut();
+											$(form).find('.sm-form-control').val('');
+											$('#contact-form-result').attr('data-notify-msg', $('#contact-form-result').html()).html('');
+											SEMICOLON.widget.notifications($('#contact-form-result'));
+										}
+									});
+								}
+							});
+
+						</script>
+
+					</div><!-- .postcontent end -->
+
+					<!-- Sidebar
+					============================================= -->
+					<div class="sidebar col_last nobottommargin">
+
+						<address>
+							<strong>Headquarters:</strong><br>
+							795 Folsom Ave, Suite 600<br>
+							San Francisco, CA 94107<br>
+						</address>
+						<abbr title="Phone Number"><strong>Phone:</strong></abbr> (91) 8547 632521<br>
+						<abbr title="Fax"><strong>Fax:</strong></abbr> (91) 11 4752 1433<br>
+						<abbr title="Email Address"><strong>Email:</strong></abbr> info@canvas.com
+
+						
+
+						<div class="widget noborder notoppadding">
+
+							<a href="#" class="social-icon si-small si-dark si-facebook">
+								<i class="icon-facebook"></i>
+								<i class="icon-facebook"></i>
+							</a>
+
+							<a href="#" class="social-icon si-small si-dark si-linkedin">
+								<i class="icon-linkedin"></i>
+								<i class="icon-linkedin"></i>
+							</a>
+
+						</div>
+
+					</div><!-- .sidebar end -->
 
 				</div>
-
-				<div class="promo topmargin-lg promo-border bottommargin-lg promo-full">
-					<div class="container clearfix">
-						<h3>Call us today at <span>+91.22.57412541</span> or Email us at <span>support@canvas.com</span></h3>
-						<span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
-						<a href="#" class="button button-xlarge button-rounded">Start Browsing</a>
-					</div>
-				</div>
-
-				
-				<div class="container clearfix">
-
-					<div id="side-navigation">
-
-						<div class="col_one_third nobottommargin">
-
-							<ul class="sidenav">
-								<li class="ui-tabs-active"><a href="#snav-content1"><i class="icon-screen"></i>Responsive Layout<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content2"><i class="icon-magic"></i>Retina Ready Display<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content3"><i class="icon-star3"></i>Fast Performance<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content4"><i class="icon-gift"></i>Bootstrap 3.2 Compatible<i class="icon-chevron-right"></i></a></li>
-								<li><a href="#snav-content5"><i class="icon-adjust"></i>Light &amp; Dark Scheme<i class="icon-chevron-right"></i></a></li>
-							</ul>
-
-						</div>
-
-						<div class="col_two_third col_last nobottommargin">
-
-							<div id="snav-content1">
-								<div class="heading-block">
-									<h3>Flexible Responsive Layout</h3>
-									<span>We support multiple Devices &amp; Layouts.</span>
-								</div>
-								<img src="images/others/mac-phone.png" alt="Image" class="alignleft" style="max-width: 320px;">
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo rerum facilis deserunt maxime perspiciatis suscipit numquam ipsam, quisquam nesciunt, expedita voluptas et placeat odio nisi dolorum. Ab minus nam tenetur accusamus eligendi maiores natus ipsum ratione possimus a, nostrum atque!</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur tempora perferendis maiores saepe voluptatibus possimus, voluptatum laborum. Veritatis deleniti expedita veniam quo eum commodi laboriosam illo obcaecati sit in, illum saepe neque voluptas quis, ullam porro autem. Qui incidunt amet eum dolores expedita, sit laudantium, saepe. Nam tempore rerum, quibusdam est quia impedit rem unde nostrum voluptatum minus ipsa quam fugiat ullam voluptatibus neque accusamus modi eos veniam. Dolor, reiciendis.</p>
-							</div>
-
-							<div id="snav-content2">
-								<div class="heading-block">
-									<h3>Brilliant Retina Display</h3>
-									<span>Crisp &amp; Clear Graphics across all your Retina &amp; Standard Devices.</span>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis praesentium quaerat blanditiis incidunt corporis, odit placeat dolorum. Voluptate laborum facere reprehenderit dolores repudiandae voluptatibus earum quod dignissimos odit! Aperiam optio delectus dolorum, fugit praesentium aut voluptate autem, sapiente labore architecto magni cumque magnam nobis, error accusamus soluta. Facilis, architecto, eos!</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum consequuntur quaerat vero qui ipsum sunt velit vel, officia, nihil amet ullam. Omnis nam rerum, harum!</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima perspiciatis cumque, ipsa laudantium totam blanditiis, expedita ut odit, cupiditate rem facilis ea ab, hic amet numquam nulla possimus consectetur ipsum fuga! Atque quibusdam, id eius illum numquam porro architecto accusamus nam adipisci mollitia excepturi dolores non, maiores sit fuga vero cumque ullam. Vitae quidem totam similique tempore eligendi necessitatibus culpa.</p>
-							</div>
-
-							<div id="snav-content3">
-								<div class="heading-block">
-									<h3>Powerful &amp; Optimized Code</h3>
-									<span>Smart Reusable code all throughout the Template for Infinite Customizations.</span>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit perferendis quisquam quod eius illo possimus id maiores consequatur accusamus commodi?</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, optio animi adipisci distinctio fuga, nihil perferendis dignissimos. Aperiam odio voluptatem dignissimos aliquam? Ea, nihil animi, recusandae quos nulla, suscipit magni provident nesciunt incidunt quo dicta asperiores iste. Illo, qui culpa. Reprehenderit in asperiores blanditiis pariatur aliquid iusto. Quisquam voluptatibus nostrum architecto repudiandae voluptate, ipsum quae iure! Commodi recusandae, repellendus voluptas fugiat aspernatur culpa quod delectus quidem consequatur odio assumenda saepe inventore molestiae ea expedita hic dolorum distinctio ut! Maiores, error.</p>
-							</div>
-
-							<div id="snav-content4">
-								<div class="heading-block">
-									<h3>Bootstrap Compatible</h3>
-									<span>Use the amazing features of the Bootstrap Framework.</span>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam facilis reiciendis maxime minus, iusto molestiae dolor veritatis officia cumque a sit, ducimus iste beatae eos harum fugit. Fuga et, iste sequi ea quibusdam doloremque delectus. Ducimus delectus incidunt, deleniti assumenda dignissimos magni, quo laboriosam architecto dolorum, facere cum tempore, totam.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum esse odio, voluptatem, fuga dolore labore. Voluptate, tenetur. Ab temporibus sed adipisci dolor ipsa cumque iusto maiores dolorum molestias magni expedita pariatur modi facere cupiditate eius quas, officiis eligendi cum veritatis dolore autem? Inventore vero doloremque sunt, et modi eos placeat.</p>
-							</div>
-
-							<div id="snav-content5">
-								<div class="heading-block">
-									<h3>Light &amp; Dark Schemes</h3>
-									<span>Use the dual tone schemes or mix them according to your needs.</span>
-								</div>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium voluptas eveniet, recusandae ducimus commodi, maiores voluptatem consequuntur autem quod id molestiae quam nulla minus aliquam nobis laboriosam nisi ut aut adipisci esse omnis at. Voluptatem, natus distinctio minus possimus, aliquid magnam ratione. Adipisci odit nemo voluptatum quas animi, amet et fuga quisquam possimus, dolore id sint eum consequuntur, magnam aliquid impedit doloremque voluptates, ducimus laboriosam. Sint quisquam molestias libero voluptatum.</p>
-								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur nisi nemo et esse. Fugiat facere harum, error iusto assumenda illo debitis quas, fugit similique minima.</p>
-							</div>
-
-						</div>
-
-					</div>
-
-					<script>
-					  $(function() {
-						$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
-					  });
-					</script>
-
-					<div class="clear"></div>
-					</div>
-
-				<div class="promo topmargin-lg promo-border promo-full">
-					<div class="container clearfix">
-						<h3>Call us today at <span>+91.22.57412541</span> or Email us at <span>support@canvas.com</span></h3>
-						<span>We strive to provide Our Customers with Top Notch Support to make their Theme Experience Wonderful</span>
-						<a href="#" class="button button-xlarge button-rounded">Start Browsing</a>
-					</div>
-				</div>
-
 
 			</div>
 
