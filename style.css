@@ -6662,7 +6662,7 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	font-size: 14px;
 	height: 40px;
 	line-height: 40px;
-	background-color: #1ABC9C;
+	background-color: #ffc000;
 	color: #FFF;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -9269,7 +9269,7 @@ ul.tab-nav li a i {
 	border-color: rgba(0,0,0,0.1) !important;
 	color: #FFF !important;
 	font-weight: 600;
-	background-color: #1ABC9C !important;
+	background-color: #ffc000 !important;
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
